@@ -5,7 +5,7 @@ export function Create({ setBlogs }) {
     const navigate = useNavigate();
     const [searchParams] = useSearchParams();
 
-    const [newItem, setNewItem] = useState({ id: crypto.randomUUID(), title: "", content: "", image: null, views: 0 });
+    const [newItem, setNewItem] = useState({ id: crypto.randomUUID(), title: "", content: "", image: null, views: 0, comments: ["hello there"]});
     const editId = searchParams.get("edit");
     useEffect(() => {
         const editId = searchParams.get("edit");

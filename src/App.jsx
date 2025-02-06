@@ -28,7 +28,7 @@ function App() {
           <Route path='/create' element={<Create setBlogs={setBlogs} />} />
           <Route path='/about' element={<About />} />
           <Route path='/blog' element={<Blog blogs={blogs} setBlogs={setBlogs}/>} />
-          <Route path='/content/:id' element={<Content blogs={blogs}/>} />
+          <Route path='/content/:id' element={<Content blogs={blogs} setBlogs={setBlogs}/>} />
         </Routes>
         <Footer />
       </BrowserRouter>
